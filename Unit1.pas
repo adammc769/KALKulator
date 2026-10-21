@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.NumberBox,
-  Vcl.ExtCtrls, Vcl.Buttons;
+  Vcl.ExtCtrls, Vcl.Buttons, Unit2;
 
 type
   TForm1 = class(TForm)
@@ -28,6 +28,7 @@ type
     BitBtn2: TBitBtn;
     Label5: TLabel;
     Label6: TLabel;
+    Button2: TButton;
     procedure PlusOperationClick(Sender: TObject);
     procedure MultiOperationClick(Sender: TObject);
     procedure MinOperationClick(Sender: TObject);
@@ -36,6 +37,7 @@ type
     procedure Timer1Timer(Sender: TObject);
     procedure FormActivate(Sender: TObject);
     procedure BitBtn2Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -89,6 +91,11 @@ procedure TForm1.Button1Click(Sender: TObject);
 begin
   if BInput.ValueInt = 0 then BInput.ValueInt := 1;
   Numberbox1.ValueInt := Oblicz(AInput.ValueInt, BInput.ValueInt, Mode);
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  InfoForm.Show;
 end;
 
 procedure TForm1.DivOperationClick(Sender: TObject);

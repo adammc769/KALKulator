@@ -1,7 +1,7 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'Kalkulator'
+  Caption = 'KALKulator'
   ClientHeight = 326
   ClientWidth = 386
   Color = clBtnFace
@@ -198,11 +198,11 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label6: TLabel
-    Left = 174
-    Top = 292
+    Left = 175
+    Top = 297
     Width = 204
     Height = 15
-    Caption = 'CiepX. Inc                       Wersja 1.0 BETA'
+    Caption = 'CiepX. Inc                       Wersja 1.1 BETA'
   end
   object NumberBox1: TNumberBox
     Left = 243
@@ -288,8 +288,8 @@ object Form1: TForm1
   end
   object Button1: TButton
     Left = 71
-    Top = 288
-    Width = 97
+    Top = 293
+    Width = 58
     Height = 25
     Caption = 'Start'
     Font.Charset = DEFAULT_CHARSET
@@ -303,7 +303,7 @@ object Form1: TForm1
   end
   object BitBtn1: TBitBtn
     Left = 8
-    Top = 288
+    Top = 293
     Width = 26
     Height = 25
     Glyph.Data = {
@@ -362,7 +362,7 @@ object Form1: TForm1
   end
   object BitBtn2: TBitBtn
     Left = 40
-    Top = 288
+    Top = 293
     Width = 25
     Height = 25
     Glyph.Data = {
@@ -419,6 +419,15 @@ object Form1: TForm1
       9A9A9A9A9A9A9A7720C4}
     TabOrder = 9
     OnClick = BitBtn2Click
+  end
+  object Button2: TButton
+    Left = 135
+    Top = 293
+    Width = 34
+    Height = 25
+    Caption = 'Info'
+    TabOrder = 10
+    OnClick = Button2Click
   end
   object Timer1: TTimer
     Interval = 100

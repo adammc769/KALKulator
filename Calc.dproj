@@ -119,8 +119,9 @@
         <VerInfo_Private>true</VerInfo_Private>
         <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
         <VerInfo_Locale>1045</VerInfo_Locale>
-        <VerInfo_Keys>CompanyName=Ciepx. Inc;FileDescription=Kalkulator, a czego sie spodziewałeś?;FileVersion=1.0.0.0;InternalName=CALC;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.CiepX.Calc;ProductName=Kalkulator;ProductVersion=1.0.0.0;Comments=;PrivateBuild=</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=Ciepx. Inc;FileDescription=Kalkulator, a czego sie spodziewałeś?;FileVersion=1.1.0.0;InternalName=CALC;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.CiepX.Calc;ProductName=Kalkulator;ProductVersion=1.0.0.0;Comments=;PrivateBuild=</VerInfo_Keys>
         <Icon_MainIcon>$(ProjectName).Artwork\Windows\AppIcon.ico</Icon_MainIcon>
+        <VerInfo_MinorVer>1</VerInfo_MinorVer>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -140,6 +141,10 @@
         </DelphiCompile>
         <DCCReference Include="Unit1.pas">
             <Form>Form1</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Unit2.pas">
+            <Form>InfoForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">
